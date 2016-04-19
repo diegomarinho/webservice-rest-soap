@@ -5,7 +5,7 @@ import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 /**
- * @author Ben Yasin
+ * @author Diego Almeida
  */
 public interface UserRepository extends MongoRepository<User,ObjectId>{
 

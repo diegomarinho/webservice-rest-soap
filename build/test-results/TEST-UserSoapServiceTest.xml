@@ -1,5 +1,5 @@
 <?xml version="1.1" encoding="UTF-8"?>
-<testsuite name="UserSoapServiceTest" tests="1" failures="1" errors="0" timestamp="1970-01-01T00:00:00" hostname="ben" time="1.388555559333E9">
+<testsuite name="UserSoapServiceTest" tests="1" failures="1" errors="0" timestamp="1970-01-01T00:00:00" hostname="diego" time="1.388555559333E9">
   <properties/>
   <testcase name="TestSoap" classname="UserSoapServiceTest" time="1.876">
     <failure message="javax.xml.ws.WebServiceException: Could not send Message." type="javax.xml.ws.WebServiceException">javax.xml.ws.WebServiceException: Could not send Message.

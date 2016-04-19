@@ -13,7 +13,7 @@
     <context:property-placeholder ignore-unresolvable="true"
                                   location="classpath*:/application-test.properties" />
 
-    <!-- MongoDB映射对象 -->
+    <!-- MongoDB - objeto mapa -->
     <mongo:mongo host="${mongo.host}" port="${mongo.port}">
         <mongo:options connections-per-host="${mongo.connectionsPerHost}"
                        threads-allowed-to-block-for-connection-multiplier="${mongo.threadsAllowedToBlockForConnectionMultiplier}"
@@ -22,15 +22,15 @@
                        socket-timeout="${mongo.socketTimeout}"/>
     </mongo:mongo>
 
-    <!-- MongoDB工厂-->
+    <!-- MongoDB - fábrica -->
     <mongo:db-factory dbname="${mongo.dbname}" mongo-ref="mongo" />
 
-    <!-- MongoDB数据操作模板对象-->
+    <!-- MongoDB - Manipulação de dados do objeto -->
     <bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
         <constructor-arg name="mongoDbFactory" ref="mongoDbFactory"/>
     </bean>
 
-    <!-- mongodb bean的仓库目录，会自动扫描扩展了MongoRepository接口的接口进行注入 -->
+    <!-- mongodb bean - O diretório do repositório, ele irá varrer automaticamente - MongoRepository - Interface implantação -->
     <mongo:repositories base-package="repository" mongo-template-ref="mongoTemplate"/>
 
     <mongo:mapping-converter base-package="model" />

@@ -12,7 +12,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 /**
- * @author Ben Yasin
+ * @author Diego Almeida
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = { "/applicationContext-test.xml" })
@@ -26,7 +26,7 @@ public class UserRepositoryTest {
     public void test() {
 
         User user = new User();
-        user.setName("Ben Yasin");
+        user.setName("Diego Almeida");
         user.setAge(28);
         user.setPosition("manager");
         user.setInterest("program");
@@ -38,7 +38,7 @@ public class UserRepositoryTest {
         LOGGER.info("1. user : " + user);
 
         // query to search user
-        Query searchUserQuery = new Query(Criteria.where("name").is("Ben Yasin"));
+        Query searchUserQuery = new Query(Criteria.where("name").is("Diego Almeida"));
 
         // find the saved user again.
         User savedUser = mongoTemplate.findOne(searchUserQuery, User.class);

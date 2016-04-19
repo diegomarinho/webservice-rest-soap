@@ -8,7 +8,7 @@ import javax.annotation.Resource;
 import javax.jws.WebService;
 
 /**
- * @author Ben Yasin
+ * @author Diego Almeida
  */
 @WebService(
         portName = "UserSoapPort",

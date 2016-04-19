@@ -19,7 +19,7 @@ import java.net.URL;
 import static junit.framework.Assert.assertEquals;
 
 /**
-* @author Ben Yasin
+* @author Diego Almeida
 */
 public class UserJaxRsServiceTest {
 
@@ -88,8 +88,8 @@ public class UserJaxRsServiceTest {
         WebResource webResource = client.resource(nodeEntryPointUri);
 
         MultivaluedMap formData = new MultivaluedMapImpl();
-        formData.add("name", "ben");
-        formData.add("age", "45");
+        formData.add("name", "diego");
+        formData.add("age", "29");
         formData.add("position", "ceo");
         formData.add("interest", "ceo");
         ClientResponse response = webResource.type(MediaType.APPLICATION_FORM_URLENCODED_TYPE)

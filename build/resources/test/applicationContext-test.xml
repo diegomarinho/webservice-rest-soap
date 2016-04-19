@@ -22,15 +22,15 @@
                        socket-timeout="${mongo.socketTimeout}"/>
     </mongo:mongo>
 
-    <!-- MongoDB工厂-->
+    <!-- MongoDB-->
     <mongo:db-factory dbname="${mongo.dbname}" mongo-ref="mongo" />
 
-    <!-- MongoDB数据操作模板对象-->
+    <!-- MongoDB-->
     <bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
         <constructor-arg name="mongoDbFactory" ref="mongoDbFactory"/>
     </bean>
 
-    <!-- mongodb bean的仓库目录，会自动扫描扩展了MongoRepository接口的接口进行注入 -->
+    <!-- mongodb beanMongoRepository -->
     <mongo:repositories base-package="repository" mongo-template-ref="mongoTemplate"/>
 
     <mongo:mapping-converter base-package="model" />

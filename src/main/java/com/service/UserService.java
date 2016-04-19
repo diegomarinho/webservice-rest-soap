@@ -4,7 +4,7 @@ import com.model.User;
 import org.bson.types.ObjectId;
 
 /**
- * @author Ben Yasin
+ * @author Diego Almeida
  */
 public interface UserService {
 

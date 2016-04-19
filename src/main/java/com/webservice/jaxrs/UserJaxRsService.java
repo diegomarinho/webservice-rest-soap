@@ -18,7 +18,7 @@ import javax.ws.rs.core.UriInfo;
 import java.net.UnknownHostException;
 
 /**
- * @author Ben Yasin
+ * @author Diego Almeida
  */
 @Service
 @Path("/user")

@@ -4,7 +4,7 @@ import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 /**
- * @author Ben Yasin
+ * @author Diego Almeida
  */
 @Document
 public class User {

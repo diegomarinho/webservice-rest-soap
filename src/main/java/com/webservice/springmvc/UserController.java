@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
-* @author Ben Yasin
+* @author Diego Almeida
 */
 @Controller
 @RequestMapping(value = "/user")

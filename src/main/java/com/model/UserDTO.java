@@ -5,7 +5,7 @@ import org.bson.types.ObjectId;
 import javax.xml.bind.annotation.*;
 
 /**
- * @author Ben Yasin
+ * @author Diego Almeida
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "user",
